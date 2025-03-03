@@ -1,0 +1,37 @@
+// Constants - information that doesn't change
+
+const 
+
+// Array of words: 5-7 words/hints or however many you choose
+
+// Variables - information that changes throughout gameplay
+// attempts - the number of attempts a player has to guess wrong (any number is fine)
+// wordToMatch - ex: ["h", "o", "r", "s", "e"]; this contains the word we need to guess
+// wordGuessed - ex: ["h", "o", "_", "_", "_"]; this contains the letters chosen by the user
+
+// Element references
+// wordToBeGuessedElement - this is where we print the letters of the word being guessed
+// keyboardElement - this is a reference to the element holding all your keys buttons
+// attemptsRemainingElement - this is a reference to a dom element that shows how many attempts are remaining
+
+// Event Listeners
+// keyboardElement - this element needs an event listener so we can respond each time
+// a key button is clicked
+
+// Functions
+
+// handleClick
+// This function will be called each time a key button is clicked
+// check if the number attempts remaining has reach 0; if so, we need to immediately return (stop the game)
+// read which key was clicked so we can make a comparison
+// check if the key value they clicked is included in the wordToMatch Array
+// if it's not a match, we need to decrement the attempts variable
+    // update the number of attempts remaining in the dom
+// if it is a match, we'll add it to the wordGuessed array
+// update the wordToBeGuessed element in the dom with the correct letter the user guessed
+
+// startGame
+// resets the attempts variable to max wrong guesses
+// reset the wordToMatch variable to an array of characters of the word to be guessed ex: ["h", "o", "r", "s", "e"]
+// reset the wordGuessed variable to and array of underscores to represent blank spaces ex: ["_", "_", "_"]
+
